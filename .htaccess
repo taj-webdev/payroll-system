@@ -1,0 +1,14 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Base folder (penting untuk Laragon vhost)
+    RewriteBase /
+
+    # Jangan rewrite file & folder yang ada
+    RewriteCond %{REQUEST_FILENAME} -f [OR]
+    RewriteCond %{REQUEST_FILENAME} -d
+    RewriteRule ^ - [L]
+
+    # Semua request diarahkan ke public/
+    RewriteRule ^(.*)$ public/$1 [L]
+</IfModule>
