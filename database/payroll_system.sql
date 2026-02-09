@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Jan 20, 2026 at 03:25 AM
+-- Generation Time: Feb 06, 2026 at 04:07 AM
 -- Server version: 8.0.30
 -- PHP Version: 8.3.30
 
@@ -183,7 +183,9 @@ INSERT INTO `gaji_detail` (`id`, `gaji_bulan_id`, `karyawan_id`, `gaji_pokok`, `
 (7, 1, 5, 5000000.00, 4500000.00, 900000.00, 100000.00, 10300000.00, 'approved', 3, NULL, '2026-01-14 06:25:34', 'SANFORD - GAJI JANUARI 2026', '2026-01-06 07:17:17'),
 (11, 1, 12, 6500000.00, 6000000.00, 1500000.00, 0.00, 14000000.00, 'approved', NULL, 2, '2026-01-14 07:37:24', 'TERTU - GAJI JANUARI 2026', '2026-01-14 06:24:40'),
 (13, 1, 13, 5500000.00, 5500000.00, 750000.00, 0.00, 11750000.00, 'approved', NULL, 2, '2026-01-15 02:31:23', 'BENNYQT - GAJI JANUARI 2026', '2026-01-15 02:29:47'),
-(14, 1, 14, 5500000.00, 6000000.00, 600000.00, 0.00, 12100000.00, 'approved', NULL, 2, '2026-01-20 02:34:12', 'INNOCENT - GAJI JANUARI 2026', '2026-01-20 02:01:19');
+(14, 1, 14, 5500000.00, 6000000.00, 600000.00, 0.00, 12100000.00, 'approved', NULL, 2, '2026-01-20 02:34:12', 'INNOCENT - GAJI JANUARI 2026', '2026-01-20 02:01:19'),
+(15, 2, 13, 5500000.00, 5500000.00, 0.00, 0.00, 11000000.00, 'pending', NULL, NULL, NULL, 'BENNYQT - GAJI FEBRUARI 2026', '2026-02-04 09:10:52'),
+(16, 2, 9, 6000000.00, 4000000.00, 0.00, 0.00, 10000000.00, 'pending', NULL, NULL, NULL, 'KIRK - GAJI FEBRUARI 2026', '2026-02-04 09:11:31');
 
 -- --------------------------------------------------------
 
@@ -498,7 +500,7 @@ ALTER TABLE `gaji_bulan`
 -- AUTO_INCREMENT for table `gaji_detail`
 --
 ALTER TABLE `gaji_detail`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- AUTO_INCREMENT for table `gaji_tahun`
